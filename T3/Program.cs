@@ -17,7 +17,11 @@ namespace T2
             washer.SetProgram("Hellävarainen");
             washer.PrintData();
 
-            Washer washer2 = new Washer();
+            Washer washer2 = new Washer(40, 35);
+            washer2.PrintData();
+            washer2.Off();
+            washer2.SetProgram("Joku pesuohjelma");
+            washer2.PrintData();
         }
     }
 }

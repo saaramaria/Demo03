@@ -23,6 +23,7 @@ namespace T2
         // parametric constructor
         public Washer(int temperature, int duration)
         {
+            IsOn = true;
             Temperature = temperature;
             Duration = duration;
         }
@@ -43,6 +44,18 @@ namespace T2
         public void SetTemperature(int temperature)
         {
             Temperature = temperature;
+        }
+
+        //washer on
+        public void On()
+        {
+            IsOn = true;
+        }
+
+        //washer off
+        public void Off()
+        {
+            IsOn = false;
         }
 
         // print properties to console
