@@ -25,10 +25,10 @@ namespace T5
             }
 
             //change the information of the student in the first index
-            students[0].Name = "Pena";
+            students[0].Name = "Saara Virtanen";
             students[0].Credits = 35;
             students[0].AddCredits();
-            students[0].Age = 20;
+            students[0].Age = 21;
             students[0].StudentNo = "K1698";
             students[0].Field = "ICT";
             students[0].HaveABeer();
@@ -38,6 +38,10 @@ namespace T5
             {
                 students[i].PrintData();
             }
+
+            //parametric constructor
+            Student student2 = new Student("Pena", 19, "K1111", true);
+            student2.PrintData();
         }
     }
 }

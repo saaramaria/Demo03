@@ -28,6 +28,15 @@ namespace T5
             IsHavingABeer = false;
         }
 
+        //parametric constructor
+        public Student(string name, int age, string studentno, bool beer)
+        {
+            Name = name;
+            Age = age;
+            StudentNo = studentno;
+            IsHavingABeer = beer;
+        }
+
         //add course credits
         public void AddCredits()
         {
