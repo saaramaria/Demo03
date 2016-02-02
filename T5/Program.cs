@@ -39,7 +39,7 @@ namespace T5
                 students[i].PrintData();
             }
 
-            //parametric constructor
+            //using parametric constructor
             Student student2 = new Student("Pena", 19, "K1111", true);
             student2.PrintData();
         }
